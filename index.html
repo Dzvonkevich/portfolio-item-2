@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>duhoot</title>
+</head>
+<body>
+	<header>
+		<div class="nav-mini">
+			<img alt="nav-logo" class="nav-logo" src="images/nav-logo.png">
+			<img alt="menu-icon" class="menu-icon" src="images/menu-icon.png" onclick="menuClick()">
+		</div>
+		<div class="nav-full">
+			<ul class="nav">
+				<li class="nav-item base-font-color">reality</li>
+				<li class="nav-item base-font-color">living</li>
+				<li class="nav-item base-font-color">education</li>
+				<li class="nav-item base-font-color">entertainment</li> 
+				<li class="nav-item base-font-color">mobility</li>
+			</ul>	
+		</div>
+	</header>
+	<main>
+		<div class="start-page">
+			<div class="start-page-search">
+				<form class="start-page-search-form">
+					<h2 class="search-title">What are you looking for?</h2>
+					<div class="select-block">
+						<select class="select-subblock">
+							<option>Dubai</option>
+							<option>London</option>
+							<option>New York</option>
+							<option>Paris</option>
+						</select>
+						<select  class="select-subblock">
+							<option>education</option>
+							<option>reality</option>
+							<option>living</option>
+							<option>entertainment</option>
+							<option selected>mobility</option>
+						</select>
+					</div>
+					<input class="input-block" type="text" value="Keyword, name, date, ..." name="">
+					<input class="btn" type="submit" value="search">
+				</form>
+			</div>
+		</div>
+		<div class="container">
+		<div class="filter">
+			<div class="filter-select">
+				<h5><span class="font-red">recomended</span></h5>
+				<h5>latest</h5>
+				<h5>highlights</h5>
+			</div>
+			<div class="filter-geo">
+				<select class="select-subblock">
+					<option>Dubai</option>
+					<option>London</option>
+					<option>New York</option>
+					<option>Paris</option>
+				</select>
+				<div class="filter-geo-btn">
+					<h5 class="filter-geo-btn-title">show map</h5>
+				</div>
+			</div>
+
+			<div class="filter-circle">
+				<h5>filter:</h5>
+				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-1.png"></div>
+				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-2.png"></div>
+				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-3.png"></div>
+				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-4.png"></div>
+				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-5.png"></div>
+			</div>
+		</div>
+		
+			<div class="items">
+				<div class="items-block row">
+					<div class="item-small item-green col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-3.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<span class="item-info">$2.990</span>
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-yellow col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-2.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-2.png">
+								<p class="base-font-color">Beach party festival 2014</p>
+								<h5>Long beach</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-violet col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-1.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-4.png">
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-green col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-3.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<span class="item-info">$2.990</span>
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div> 
+				</div>
+				<div class="items-block row">
+					<div class="item-big item-green col-lg-6">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-bg-1.png">
+							<figcaption>
+								<span class="item-big-title">vision agency</span>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<div class="item-big-user-block">
+									<img class="item-big-user-logo" alt="big-img-user-logo" src="images/items-img/big-img-user-logo-1.png">
+									<div class="item-big-user-info">
+										<h4>Lucy-P</h4>
+										<p class="base-font-color">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+									</div>	
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-big item-yellow col-lg-6">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-bg-2.png">
+							<figcaption>
+								<span class="item-big-title">skybox club</span>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-2.png">
+								<div class="item-big-user-block">
+									<img class="item-big-user-logo" alt="big-img-user-logo" src="images/items-img/big-img-user-logo-2.png">
+									<div class="item-big-user-info">
+										<h4>Peter145</h4>
+										<p class="base-font-color">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+									</div>	
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>	
+				<div class="items-block row">
+					<div class="item-small item-green col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-3.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<span class="item-info">$2.990</span>
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-yellow col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-2.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-2.png">
+								<p class="base-font-color">Beach party festival 2014</p>
+								<h5>Long beach</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-violet col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-1.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-4.png">
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-green col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-3.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<span class="item-info">$2.990</span>
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div> 
+				</div>	
+				<div class="items-block row">
+					<div class="item-big item-yellow col-lg-6">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-bg-2.png">
+							<figcaption>
+								<span class="item-big-title">skybox club</span>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-2.png">
+								<div class="item-big-user-block">
+									<img class="item-big-user-logo" alt="big-img-user-logo" src="images/items-img/big-img-user-logo-2.png">
+									<div class="item-big-user-info">
+										<h4>Peter145</h4>
+										<p class="base-font-color">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+									</div>	
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-green col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-3.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-5.png">
+								<span class="item-info">$2.990</span>
+								<p class="base-font-color">2 bedroom house for rent in Dubai</p>
+								<h5>Vision Agency</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="item-small item-yellow col-xs-12 col-sm-6 col-lg-3">
+						<figure>
+							<img class="item-img" alt="item-img" src="images/items-img/item-sm-2.png">
+							<figcaption>
+								<img class="item-sub-img" src="images/filter-img/filter-circle-img-2.png">
+								<p class="base-font-color">Beach party festival 2014</p>
+								<h5>Long beach</h5>
+							</figcaption>
+						</figure>
+					</div>
+				</div>		
+			</div>
+			<div class="offer">
+
+					<div class="offer-title-block">
+						<h3 class="offer-title base-font-color">What can DuHoot offer to you?</h3>
+						<p class="offer-sub-title base-font-color">Etiam cursus ipsum quis enim faucibus</p>
+					</div>
+					<img class="offer-img" alt="offer-img" src="images/offer-img.png">
+					<h3 class="offer-title"><span class="font-green">Reality</span></h3>
+					<div class="offer-main-block">
+						<div class="offer-block">
+							<img class="offer-block-img" alt="offer-block-img" src="images/offer-block-img-1.png">
+							<p class="base-font-color">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+						<div class="offer-block">
+							<img class="offer-block-img" alt="offer-block-img" src="images/offer-block-img-2.png">
+							<p class="base-font-color">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>					
+					</div>
+				
+			</div>
+		</div>	
+	</main>
+	<footer>
+		<div class="container">
+		<div class="footer-email">
+			<h3 class="footer-title">Subscribe to our newsletter</h3>
+			<form>
+  				<input class="footer-email-form" type="email" name="email" value="your@email.com">
+  				<button class="btn">subscribe</button>
+			</form>
+		</div>
+		<div class="footer-menu">
+			<div class="footer-menu-block">
+				<h5 class="footer-sub-title">Ipsum quis</h5>
+				<ul>
+					<li>Aliquam quis</li>
+					<li>Pulvinar purus</li>
+					<li>Etiam cursus</li>
+					<li>Ipsum quis</li>
+					<li>Enim faucibus</li>
+				</ul>
+			</div>
+			<div class="footer-menu-block">
+				<h5 class="footer-sub-title">Ipsum quis</h5>
+				<ul>
+					<li>Aliquam quis</li>
+					<li>Pulvinar purus</li>
+					<li>Etiam cursus</li>
+					<li>Ipsum quis</li>
+					<li>Enim faucibus</li>
+				</ul>
+			</div>
+			<div class="footer-menu-block social-block">
+				<h5 class="footer-sub-title">Follow us</h5>
+				<div class="footer-social">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<i class="fa fa-google-plus" aria-hidden="true"></i>
+					<i class="fa fa-youtube" aria-hidden="true"></i>
+				</div>
+				<br>
+				<h5>Copyright © All Rights reserved</h5>
+			</div>
+		</div>
+		</div>
+	</footer>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>

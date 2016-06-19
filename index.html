@@ -14,6 +14,9 @@
 		<div class="nav-mini">
 			<img alt="nav-logo" class="nav-logo" src="images/nav-logo.png">
 			<img alt="menu-icon" class="menu-icon" src="images/menu-icon.png" onclick="menuClick()">
+			<!--1. Вешай события только на теги <a> и <button>-->
+			<!--2. Не делай картинкой, то что можно сверстать, потому что это все увеличивает размер сайта и количество запросов к серверу. -->
+			<!--Смори как здесь сделан бургер http://test.etrange.com.ua/wapik/page-home.html-->
 		</div>
 		<div class="nav-full">
 			<ul class="nav">
@@ -22,6 +25,8 @@
 				<li class="nav-item base-font-color">education</li>
 				<li class="nav-item base-font-color">entertainment</li> 
 				<li class="nav-item base-font-color">mobility</li>
+				<!--Так как это навигация, обязательно должны быть ссылки.-->
+				<!--<li class="nav-item base-font-color"><a href="http://www.site.ua" class="nav-item-link">mobility</a></li>-->
 			</ul>	
 		</div>
 	</header>
@@ -37,6 +42,7 @@
 							<option>New York</option>
 							<option>Paris</option>
 						</select>
+						<!--Селекторы стилизируй только через JS, вот хороший плагин http://dimox.name/jquery-form-styler/-->
 						<select  class="select-subblock">
 							<option>education</option>
 							<option>reality</option>
@@ -46,6 +52,8 @@
 						</select>
 					</div>
 					<input class="input-block" type="text" value="Keyword, name, date, ..." name="">
+					<!--Здесь уместно использовать атрибут placeholder вместо value-->
+					<!--<input class="input-block" type="text" placeholder="Keyword, name, date, ..." name="">-->
 					<input class="btn" type="submit" value="search">
 				</form>
 			</div>
@@ -56,6 +64,10 @@
 				<h5><span class="font-red">recomended</span></h5>
 				<h5>latest</h5>
 				<h5>highlights</h5>
+				<!--h5 - это заголовок пятого уровня. Здесь уместно использовать button-->
+				<!--<button class="filter-select--button is_selected">recomended</button>	-->
+				<!--<button class="filter-select--button">latest</button>	-->
+				<!--<button class="filter-select--button">highlights</button>	-->
 			</div>
 			<div class="filter-geo">
 				<select class="select-subblock">
@@ -66,6 +78,7 @@
 				</select>
 				<div class="filter-geo-btn">
 					<h5 class="filter-geo-btn-title">show map</h5>
+					<!--все на что нужно нажимать,этло или <a href=""></a> или <button></button>, <input type="submit">-->
 				</div>
 			</div>
 
@@ -76,6 +89,9 @@
 				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-3.png"></div>
 				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-4.png"></div>
 				<div class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-5.png"></div>
+				<!--Это кнопки, и мы их оборачиваем в тег <a href=""></a>-->
+				<!--<a href="javascript:" class="circle"><img class="filter-img" src="images/filter-img/filter-circle-img-1.png" alt=""></a>-->
+				<!--у всех тегов должен быть атрибут alt="" , не обязательно писать в нем значение, но атрибут должен быть всегда-->
 			</div>
 		</div>
 		
